@@ -17,6 +17,8 @@ jobs:
         name: checkout and node setup
         with:
           node-version-file: 'package.json'
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
       - run: |
             npm install
             npm run build
