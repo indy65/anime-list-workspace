@@ -19,4 +19,6 @@ jobs:
         name: checkout and ndoe serup
         with:
           node-version-file: 'package.json'
-      - run: npm run build
+      - run: |
+            npm install
+            npm run build
