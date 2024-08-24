@@ -8,12 +8,12 @@ name: Dependabot
 permissions:
   pull-requests: write
   issues: write
- # repository-projects: write
+  #repository-projects: write
 
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    #if: github.actor == 'dependabot[bot]'
     steps:
       - name: Dependabot metadata
         id: metadata
