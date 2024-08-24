@@ -6,6 +6,7 @@ name: build CI
 on:
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,9 +17,9 @@ jobs:
       - uses: actions/setup-node@v4
         name: checkout and node setup
         with:
-          node-version-file: 'package.json'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
+          node-version-file: "package.json"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
       - run: |
-            npm install
-            npm run build
+          npm install
+          npm run build
