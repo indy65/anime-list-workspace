@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-anime-list-app:build:production"
+              "buildTarget": "my-anime-list-app:build:production"
             },
             "development": {
-              "browserTarget": "my-anime-list-app:build:development"
+              "buildTarget": "my-anime-list-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-anime-list-app:build"
+            "buildTarget": "my-anime-list-app:build"
           }
         },
         "test": {
