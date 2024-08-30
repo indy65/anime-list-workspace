@@ -19,7 +19,7 @@
     "@angular/core": "^18.2.1",
     "@angular/forms": "^18.2.1",
     "@angular/platform-browser": "^18.2.1",
-    "@angular/platform-browser-dynamic": "^18.2.1",
+    "@angular/platform-browser-dynamic": "^18.2.2",
     "@angular/router": "^18.2.1",
     "build": "^0.1.4",
     "ng": "^0.0.0",
